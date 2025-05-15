@@ -9,6 +9,8 @@ public class Ex01 {
 	
 	public static void main(String[] args) throws IOException{
 		
+		//UTF-8로 해석돼서 깨진다. 파일은 MS949형식
+		
 		//주 스트림 준비
 		Reader fr = new FileReader("C:\\javaStudy\\MS949.txt");
 		
@@ -35,7 +37,5 @@ public class Ex01 {
 		System.out.println("------------------------프로그램 종료");
 		
 	}
-	//학교종이는 깨지는데 이건 깨지는 이유 : 학교종이는 UTF-8로 저장되어있기 때문
-	//MS949는 UTF-8로 저장되어있지 않아서 깨진다.
 	
 }
